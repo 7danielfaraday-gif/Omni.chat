@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "RPA Auto-Cookie & Profile Warmup",
+  "version": "1.0.0",
+  "description": "Automação RPA baseada em Personas para gerar histórico, cache e aceitar cookies em qualquer navegador.",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "storage",
+    "alarms"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
